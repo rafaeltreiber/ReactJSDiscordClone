@@ -29,8 +29,7 @@ cursor: pointer;
     background-color: var(--white);
     border-radius: 50%;
     content: '';
-    display: ${props => props.hasNotifications ? 'inline' : 'none'};
-
+    display: ${(props) => (props.hasNotifications ? 'inline' : 'none')};
 }
 
 &::after {
@@ -49,7 +48,7 @@ cursor: pointer;
     color: var(--white);
 
     content: '${(props) => props.mentions && props.mentions}';
-    display: ${props => props.mentions && props.mentions > 0 ? 'inline' : 'none'};
+    display: ${(props) => props.mentions && props.mentions > 0 ? 'inline' : 'none'};
 
 }
 
@@ -57,8 +56,5 @@ transition: border-radius .2s, background-color .2s;
 
 &.active, &:hover {
     border-radius: 16px;
-    background-color: ${ props => props.isHome ? 'var(--rocketseat)' : 'var(--discord)' };
-
-}
-
-`;
+    background-color: ${ (props) => props.isHome ? 'var(--rocketseat)' : 'var(--discord)' };
+}`;

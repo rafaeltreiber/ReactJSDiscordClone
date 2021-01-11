@@ -8,10 +8,6 @@ import styled from 'styled-components';
 // UL - User List
 // UI - User Info
 
-export const Container = styled.div`
-  
-`;
-
 export const Grid = styled.div`
 display: grid;
 grid-template-columns: 71px 240px auto 240px;
@@ -21,6 +17,5 @@ grid-template-areas:
 'SL CL CD UL'
 'SL UI CD UL';
 
-height: 100vh;
-  
+height: 100vh;  
 `;
