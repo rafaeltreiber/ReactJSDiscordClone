@@ -17,7 +17,7 @@ max-height: calc(100vh - 46px - 68px);
 overflow-y: scroll;
 
 ::-webkit-scrollbar {
-    width: 4px;    
+    width: 8px;    
 }
 
 ::-webkit-scrollbar-thumb {
@@ -50,12 +50,11 @@ position: relative;
 }
 
 ~ svg {
-    position: relative;
-    top: -50%;
+    position: relative;  
+    top: -35px;
     left: 14px;
     transition: 180ms ease-in-out;
-}
-
+  }
 `;
 
 export const InputIcon = styled(AlternateEmail)`

@@ -8,12 +8,12 @@ const ChannelData: React.FC = () => {
     const div = messagesRef.current;
     if (div) {
       div.scrollTop = div.scrollHeight;
-
     }
-  }, [messagesRef])
+  }, [messagesRef]);
+
   return (
     <Container>
-      <Messages ref = {messagesRef} />
+      <Messages ref = {messagesRef}>
       <ChannelMessage
         author="Rafael Treiber"
         date="11/01/2021"
@@ -71,6 +71,7 @@ const ChannelData: React.FC = () => {
         hasMention
         isBot
       />
+      </Messages>
 
       <InputWrapper>
         <Input type="text" placeholder="Conversar em #chat-livre" />
